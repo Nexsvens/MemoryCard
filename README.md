@@ -14,8 +14,7 @@ MemoryCard adalah permainan interaktif berbasis browser yang dirancang untuk men
 - **HTML5** – Sebagai struktur utama halaman.
 - **TailwindCSS** – Untuk styling modern, responsif, dan efisien.
 - **JavaScript (Vanilla)** – Mengatur logika permainan, interaksi pengguna, countdown, sistem nyawa, dan pergantian stage.
-- **Figma AI** – Membantu proses perancangan UI secara otomatis dan cepat.
-- **ChatGPT** – Digunakan untuk merancang logika permainan, struktur folder, dokumentasi, dan optimasi ide fitur.
+- **ChatGPT and IBM Granite** – Digunakan untuk merancang logika permainan, struktur folder,dan optimasi ide fitur.
 
 ---
 
