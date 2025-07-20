@@ -222,18 +222,3 @@ const app = document.getElementById('app');
                 renderGameStage();
             });
         });
-
-        function isMobileDevice() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        window.onload = function () {
-            const gameContainer = document.getElementById("game");
-            const warningContainer = document.getElementById("mobile-warning");
-
-            if (isMobileDevice()) {
-                warningContainer.classList.remove("hidden");
-            } else {
-                gameContainer.classList.remove("hidden");
-            }
-        };
