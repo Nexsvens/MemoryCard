@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryCard Game - Dek Kartu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white" data-page="home">
+    <nav class="bg-gray-950/90 backdrop-blur-sm shadow-sm border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center text-xl font-bold">
+                    <span class="text-purple-400">Memory</span><span class="text-yellow-400">Card</span>
+                </div>
+                <div class="flex space-x-4 text-sm">
+                    <a href="/index.html" class="py-2 rounded-md font-medium text-white hover:text-purple-400" data-page="home">
+                        Beranda
+                    </a>
+                    <a href="/includes/cards.html" class="px-4 py-2 rounded-md font-medium text-white hover:text-purple-400" data-page="cards">
+                        Dek Kartu
+                    </a>
+                    <a href="/includes/rules.html" class="px-4 py-2 rounded-md font-medium text-white hover:text-purple-400" data-page="rules">
+                        Aturan Permainan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <div class="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="mb-8">
+                    </a>
+                    <h1 class="text-4xl font-bold text-center text-yellow-400 mb-2">Dek Kartu</h1>
+                    <p class="text-center text-gray-300">Hafalkan Semua Kartu Dari Setiap Stage</p>
+                </div>
+
+                <!-- Stage 1 -->
+                <section class="mb-16">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-green-700 mb-2">Stage 1</h2>
+                        <p class="text-gray-300">Level Pemula - Kartu Hewan</p>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🐱</div>
+                                <div class="text-sm font-medium text-gray-700">Kucing</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 1</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🐶</div>
+                                <div class="text-sm font-medium text-gray-700">Anjing</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 2</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🦊</div>
+                                <div class="text-sm font-medium text-gray-700">Rubah</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 3</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🐸</div>
+                                <div class="text-sm font-medium text-gray-700">Katak</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 4</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🦋</div>
+                                <div class="text-sm font-medium text-gray-700">Kupu-Kupu</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 5</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stage 2 -->
+                <section class="mb-16">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-orange-700 mb-2">Stage 2</h2>
+                        <p class="text-gray-300">Level Menengah - Kartu Buah</p>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍎</div>
+                                <div class="text-sm font-medium text-gray-700">Apel</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 1</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍌</div>
+                                <div class="text-sm font-medium text-gray-700">Pisang</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 2</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍇</div>
+                                <div class="text-sm font-medium text-gray-700">Anggur</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 3</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍊</div>
+                                <div class="text-sm font-medium text-gray-700">Jeruk</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 4</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍓</div>
+                                <div class="text-sm font-medium text-gray-700">Stroberi</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 5</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🥝</div>
+                                <div class="text-sm font-medium text-gray-700">Kiwi</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 6</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍑</div>
+                                <div class="text-sm font-medium text-gray-700">Persik</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 7</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍍</div>
+                                <div class="text-sm font-medium text-gray-700">Nanas</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 8</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🥭</div>
+                                <div class="text-sm font-medium text-gray-700">Mangga</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 9</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🍒</div>
+                                <div class="text-sm font-medium text-gray-700">Ceri</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 10</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stage 3 -->
+                <section class="mb-16">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-red-700 mb-2">Stage 3</h2>
+                        <p class="text-gray-300">Level Expert - Kartu Kendaraan</p>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚗</div>
+                                <div class="text-sm font-medium text-gray-700">Mobil</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 1</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚕</div>
+                                <div class="text-sm font-medium text-gray-700">Taksi</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 2</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚙</div>
+                                <div class="text-sm font-medium text-gray-700">SUV</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 3</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚌</div>
+                                <div class="text-sm font-medium text-gray-700">Bus</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 4</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚊</div>
+                                <div class="text-sm font-medium text-gray-700">Trem</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 5</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🏎️</div>
+                                <div class="text-sm font-medium text-gray-700">Mobil Balap</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 6</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚓</div>
+                                <div class="text-sm font-medium text-gray-700">Polisi</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 7</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚑</div>
+                                <div class="text-sm font-medium text-gray-700">Ambulans</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 8</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚒</div>
+                                <div class="text-sm font-medium text-gray-700">Pemadam</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 9</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚐</div>
+                                <div class="text-sm font-medium text-gray-700">Van</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 10</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🛻</div>
+                                <div class="text-sm font-medium text-gray-700">Pickup</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 11</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚚</div>
+                                <div class="text-sm font-medium text-gray-700">Truk</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 12</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚛</div>
+                                <div class="text-sm font-medium text-gray-700">Trailer</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 13</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🚜</div>
+                                <div class="text-sm font-medium text-gray-700">Traktor</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 14</div>
+                            </div>
+                        </div>
+                        <div class="memory-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🛵</div>
+                                <div class="text-sm font-medium text-gray-700">Scooter</div>
+                                <div class="text-sm font-medium text-gray-700">Kartu 15</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-950 border-t border-gray-800 text-gray-400 text-sm text-center px-4 py-6">
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms of Service</a>
+            <a href="#" class="hover:text-white">Contact Us</a>
+            <a href="#" class="hover:text-white">Join our community!</a>
+        </div>
+    </footer>
+</body>
+</html>

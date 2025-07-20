@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryCard Game - Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white" data-page="home">
+    <div id="mobile-warning" class="hidden min-h-screen flex items-center justify-center px-6 text-center">
+        <div>
+            <h1 class="text-2xl font-bold text-red-600 mb-4">⚠️ Akses Ditolak</h1>
+            <p class="text-lg mb-2">Game ini hanya dapat dimainkan di perangkat <span class="font-semibold">desktop</span>.</p>
+            <p class="text-sm text-gray-400">Silakan buka game ini menggunakan laptop atau komputer Anda.</p>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div id="main-content">
+        <nav class="bg-gray-950/90 backdrop-blur-sm shadow-sm border-b border-gray-800 sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center text-xl font-bold">
+                        <span class="text-purple-400">Memory</span><span class="text-yellow-400">Card</span>
+                    </div>
+                    <div class="flex space-x-4 text-sm">
+                        <a href="index.html" class="py-2 rounded-md font-medium text-white hover:text-purple-400" data-page="home">Beranda</a>
+                        <a href="includes/cards.html" class="px-4 py-2 rounded-md font-medium text-white hover:text-purple-400" data-page="cards">Dek Kartu</a>
+                        <a href="includes/rules.html" class="px-4 py-2 rounded-md font-medium text-white hover:text-purple-400" data-page="rules">Aturan Permainan</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-1">
+            <div class="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900">
+                <!-- Hero Section -->
+                <section class="hero-section py-20 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <div class="mb-8">
+                            <h1 class="text-5xl font-bold text-yellow-400 mb-6">
+                                Selamat Datang<br>di permainan MemoryCard
+                            </h1>
+                            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                                Asah kemampuan memorimu dengan permainan kartu ini <br>
+                                <span class="text-sm">*Hafalkan dek kartu setiap stage sebelum mulai*</span>
+                            </p>
+                            <a id="playBtn" href="includes/game.html"
+                                class="bg-purple-600 hover:bg-purple-700 text-white px-10 py-2 rounded-lg transition hover:scale-105">
+                                Play Now
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Card Deck Section -->
+                <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-950/50">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-12">
+                            <h2 class="text-3xl font-bold text-yellow-400 mb-8">Dek Kartu</h2>
+                            <p class="text-gray-300 mb-8">Hafalkan Semua Dek Kartu Dari Setiap Stage Sebelum Memulai Permainan!</p>
+                            <a href="includes/cards.html"
+                                class="bg-purple-600 hover:bg-purple-700 text-white px-10 py-2 rounded-lg transition hover:scale-105">
+                                See More
+                            </a>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                            <div class="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-6 transition hover:scale-105 hover:shadow-lg">
+                                <p class="text-xl font-semibold mb-2">Stage 1</p>
+                                <a href="includes/cards.html" class="text-yellow-400 hover:underline text-sm">Lihat Selengkapnya</a>
+                            </div>
+                            <div class="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-6 transition hover:scale-105 hover:shadow-lg">
+                                <p class="text-xl font-semibold mb-2">Stage 2</p>
+                                <a href="includes/cards.html" class="text-yellow-400 hover:underline text-sm">Lihat Selengkapnya</a>
+                            </div>
+                            <div class="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-6 transition hover:scale-105 hover:shadow-lg">
+                                <p class="text-xl font-semibold mb-2">Stage 3</p>
+                                <a href="includes/cards.html" class="text-yellow-400 hover:underline text-sm">Lihat Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Game Rules Section -->
+                <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="text-3xl font-bold text-yellow-400 mb-8">Aturan Permainan</h2>
+                        <p class="text-sm text-gray-300 mb-8">
+                            Pelajari cara bermain permainan MemoryCard
+                        </p>
+                        <a href="includes/rules.html"
+                            class="bg-purple-600 hover:bg-purple-700 text-white px-10 py-2 rounded-lg transition hover:scale-105">
+                            See More
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-950 border-t border-gray-800 text-gray-400 text-sm text-center px-4 py-6">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="#" class="hover:text-white">Contact Us</a>
+                <a href="#" class="hover:text-white">Join our community!</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

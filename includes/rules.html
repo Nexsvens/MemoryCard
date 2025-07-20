@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryCard Game - Aturan Permainan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white"
+    data-page="rules">
+    <nav class="bg-gray-950/90 backdrop-blur-sm shadow-sm border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center text-xl font-bold">
+                    <span class="text-purple-400">Memory</span><span class="text-yellow-400">Card</span>
+                </div>
+                <div class="flex space-x-4 text-sm">
+                    <a href="/index.html" class="px-4 py-2 rounded-md font-medium text-white hover:text-purple-400">
+                        Beranda
+                    </a>
+                    <a href="/includes/cards.html"
+                        class="px-4 py-2 rounded-md font-medium text-white hover:text-purple-400">
+                        Dek Kartu
+                    </a>
+                    <a href="/includes/rules.html"
+                        class="px-4 py-2 rounded-md font-medium text-white hover:text-purple-400">
+                        Aturan Permainan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <div class="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold text-center text-yellow-400 mb-2">Aturan Permainan</h1>
+                    <p class="text-center text-gray-300">Panduan cara bermain MemoryCard</p>
+                </div>
+                <div class="rules-content bg-gray-800 rounded-2xl shadow-2xl p-8 min-h-[400px]">
+                    <div class="text-center text-gray-300">     
+                        <p class="text-lg mb-8">"MemoryCard adalah permainan mengasah ingatan di mana pemain harus
+                            menghafalkan dan mengurutkan posisi kartu secara tepat sesuai urutan yang ditampilkan.
+                            Tantangannya terletak pada kecepatan, ketelitian, dan kemampuan mengingat dalam waktu terbatas."
+                        </p>
+                        <div class="text-left space-y-6 max-w-2xl mx-auto">
+                            <div class="p-6 bg-gray-700 rounded-xl border-2 border-purple-600 shadow-lg">
+                                <h3 class="font-semibold text-yellow-400 mb-4 text-lg">Tujuan Permainan</h3>
+                                <div class="text-sm text-gray-300 space-y-3">
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5 flex-shrink-0">1</span>
+                                        <p><strong>Menghafalkan Urutan Kartu:</strong> Pemain harus memperhatikan dan mengingat urutan tampilan kartu yang muncul secara singkat sebelum permainan dimulai.</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5 flex-shrink-0">2</span>
+                                        <p><strong>Mengklik Kartu Sesuai Urutan:</strong> Setelah urutan ditampilkan, kartu akan dibalik dan posisi tetap. Pemain harus memilih kartu satu per satu sesuai dengan urutan yang ditampilkan sebelumnya.</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5 flex-shrink-0">3</span>
+                                        <p><strong>Menguji Daya Ingat:</strong> Permainan ini melatih kemampuan mengingat secara urut dan fokus pemain dalam waktu terbatas.</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5 flex-shrink-0">4</span>
+                                        <p><strong>Menyelesaikan Setiap Stage:</strong> Terdapat 3 stage dengan tingkat kesulitan yang meningkat. Pemain harus berhasil menyelesaikan semua kartu pada setiap stage dengan benar.</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5 flex-shrink-0">5</span>
+                                        <p><strong>Mengelola Nyawa dan Waktu:</strong> Pemain diberi 3 nyawa per stage. Salah memilih kartu akan mengurangi nyawa. Jika nyawa habis, permainan berakhir.</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5 flex-shrink-0">6</span>
+                                        <p><strong>Menyelesaikan Semua Stage:</strong> Pemain dinyatakan menang jika berhasil menyelesaikan semua stage dalam waktu yang tersedia tanpa kehilangan seluruh nyawa.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-gray-700 rounded-xl border-2 border-purple-600 shadow-lg">
+                                <h3 class="font-semibold text-yellow-400 mb-4 text-lg">Cara Bermain</h3>
+                                <div class="text-sm text-gray-300 space-y-3">
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">1</span>
+                                        <p>Hafalkan Dahulu urutan dek kartu pada setiap stage</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">2</span>
+                                        <p>Klik kartu sesuai urutan yang benar</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">3</span>
+                                        <p>Kamu punya 3 nyawa per stage - hati-hati jangan sampai salah</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">4</span>
+                                        <p>Selesaikan 3 stage untuk menang dan menjadi master memori!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 text-gray-400 text-sm text-center px-4 py-6">
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms of Service</a>
+            <a href="#" class="hover:text-white">Contact Us</a>
+            <a href="#" class="hover:text-white">Join our community!</a>
+        </div>
+    </footer>
+</body>
+
+</html>
